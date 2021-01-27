@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# to make sort work propperly
-export LC_ALL=C
-
 # initializing parse of the rules and packets  
 remain_rules=`cat "$1" | grep -o '^[^#]*'`
 remain_packets=`(tee) | grep -o '^[^#]*'`
